@@ -1,0 +1,34 @@
+<div class="row">
+    <div data-ng-hide="gameStarted" class="col-md-4">
+        <button class="btn btn-success" data-ng-click="createGame()">Create Game</button>
+        <button class="btn btn-success" data-ng-click="joinGame()">Join Game</button>
+    </div>
+    <div data-ng-show="showBoard" class="col-md-4">
+        <div class="Jumbotron vertical-center">
+            <div class="container text-center">
+                <table class="table table-striped table-hover text-center">
+                    <tbody data-ng-model="gameboard">
+                        <tr>
+                            <td ng-repeat="symbol in gameboard.rowOne track by $index">{{ symbol }}</td>
+                        </tr>
+                        <tr>
+                            <td ng-repeat="symbol in gameboard.rowTwo track by $index">{{ symbol }}</td>
+                        </tr>
+                        <tr>
+                            <td ng-repeat="symbol in gameboard.rowThree track by $index">{{ symbol }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form class="form-horizontal" role="form">
+                    <h2 class="form-login-heading">Next Move</h2>
+                    <input type="text" class="form-control" placeholder="Row" data-ng-model="gameMove.Row" required autofocus>
+                    <input type="text" class="form-control" placeholder="Col" data-ng-model="gameMove.Col" required autofocus>
+                    <button class="btn btn-primary btn-info btn-block" type="submit" data-ng-click="makeMove()">Go</button>
+                    <div data-ng-hide="message == ''" data-ng-class="(successfulMove) ? 'alert alert-success' : 'alert alert-danger'">
+                        {{message}}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

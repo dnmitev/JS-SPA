@@ -1,0 +1,29 @@
+<div class="form-group">
+    <label class="col-sm-2 control-label" for="title">Title</label>
+    <div class="col-sm-10">
+        <input type="text" ng-model="movie.title" class="form-control" id="title" placeholder="Movie title...">
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-sm-2 control-label" for="year">Release year</label>
+    <div class="col-sm-10">
+        <input type="number" ng-model="movie.realeaseYear" class="form-control" id="year" placeholder="Release year...">
+    </div>
+</div>
+<div class="form-group">
+    <label for="director" class="col-sm-2 control-label">Director</label>
+    <div class="col-sm-10">
+        <input type="text" ng-model="movie.director" class="form-control" id="director" placeholder="Who directed the movie?"/>
+    </div>
+</div>
+<div class="form-group">
+    <label for="plot" class="col-sm-2 control-label">Movie Genre</label>
+    <div class="col-sm-10">
+        <input type="text" ng-model="movie.genre" class="form-control" id="plot" placeholder="Movie genre here"/>
+    </div>
+</div>
+<div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+        <input type="submit" class="btn btn-primary" value="Save"/>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>My Angular Scaffolded App</title>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="lib/toastr/toastr.min.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body ng-app="myApp" ng-cloak>
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#/" class="navbar-brand">Application</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#/myctrl">Partial 1</a>
+                </li>
+                <li>
+                    <a href="#/myctrl2">Partial 2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div ng-view>
+    <!-- This where the view will be shown -->
+</div>
+
+<hr/>
+<footer class="text-center">
+    <strong>Powered by:</strong> <a href="http://angularjs.org/" target="_blank">AngularJS</a> and
+    <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>
+</footer>
+<hr/>
+
+<script src="lib/jquery/dist/jquery.js"></script>
+<script src="lib/toastr/toastr.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-resource/angular-resource.js"></script>
+<script src="lib/angular-route/angular-route.js"></script>
+<script src="lib/angular-cookies/angular-cookies.js"></script>
+
+<script src="js/app.js"></script>
+
+<script src="js/controllers/MyCtrl.js"></script>
+<script src="js/controllers/MyCtrl2.js"></script>
+
+<script src="js/services/notifier.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<div class="row">
+    <div class="jumbotron text-center">
+        <h1>Welcome to Trip Exchange</h1>
+        <p>Find your way home!</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="panel panel-default col-md-3 text-center">
+        <div class="panel-heading"><strong>Trips</strong></div>
+        <div class="panel-body">
+            {{ stats.trips }}
+        </div>
+    </div>
+    <div class="panel panel-default col-md-3 text-center">
+        <div class="panel-heading"><strong>Finished Trips</strong></div>
+        <div class="panel-body">
+            {{ stats.finishedTrips }}
+        </div>
+    </div>
+    <div class="panel panel-default col-md-3 text-center">
+        <div class="panel-heading"><strong>Users</strong></div>
+        <div class="panel-body">
+            {{ stats.users }}
+        </div>
+    </div>
+    <div class="panel panel-default col-md-3 text-center">
+        <div class="panel-heading"><strong>Drivers</strong></div>
+        <div class="panel-body">
+            {{ stats.drivers }}
+        </div>
+    </div>
+</div>
+
+<div class="row" ng-cloak>
+    <div class="panel panel-info col-md-6">
+        <div class="panel-heading">
+            <h3 class="panel-title">Latest Trips</h3>
+        </div>
+        <div class="panel-body">
+           <div trips-directive></div>
+        </div>
+    </div>
+
+    <div class="panel panel-info col-md-6">
+        <div class="panel-heading">
+            <h3 class="panel-title">Latest Drivers</h3>
+        </div>
+        <div class="panel-body">
+            <div drivers-directive></div>
+        </div>
+    </div>
+</div>

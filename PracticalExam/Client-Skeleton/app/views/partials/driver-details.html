@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row" ng-show="isAuthorized">
+        <label for="username-filter">Filter by Username:</label>
+        <input type="text" ng-model="usernameFilter" id="username-filter">
+        <label for="driver-limit">Limit to:</label>
+        <input type="number" value="10" min="1" ng-model="driverLimit" id="driver-limit">
+    </div>
+    <div class="row">
+        <h1>{{ driver.name }}</h1>
+        <div class="row">
+            <div class="panel panel-default col-md-2">
+                <div class="panel-heading">Upcoming Trips</div>
+                <div class="panel-body">
+                    {{ driver.numberOfUpcomingTrips }}
+                </div>
+            </div>
+            <div class="panel panel-default col-md-2">
+                <div class="panel-heading">Total Trips</div>
+                <div class="panel-body">
+                    {{ driver.numberOfTotalTrips }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <p trips-directive></p>
+</div>

@@ -1,0 +1,33 @@
+{
+  "name": "ClientSkeleton-NoUsers",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dnmitev/JS-SPA",
+  "authors": [
+    "Dimitar Mitev <dnmitev@gmail.com>"
+  ],
+  "description": "Simple AngularJS client",
+  "keywords": [
+    "angular",
+    "scaffolding"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.3.1",
+    "toastr": "~2.1.0"
+  },
+  "dependencies": {
+    "toastr": "~2.1.0",
+    "angular": "~1.3.1",
+    "bootstrap": "~3.3.0",
+    "angular-resource": "~1.3.1",
+    "angular-route": "~1.3.1",
+    "angular-cookies": "~1.3.1"
+  }
+}

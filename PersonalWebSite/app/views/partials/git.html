@@ -1,0 +1,48 @@
+<div class="jumbotron">
+    <div class="row">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="{{ owner.avatar_url }}" alt="{{ owner.login }} -  avatar" class="img-thumbnail" width="125px"/>
+            </div>
+            <div class="col-md-4">
+                <p class="text-primary custom-margin">Name: <strong>{{ owner.name }}</strong></p>
+
+                <p class="text-primary custom-margin">Location: <strong>{{ owner.location }}</strong></p>
+
+                <p class="text-primary custom-margin">Public repos: <strong>{{ owner.public_repos }}</strong></p>
+
+                <p class="text-primary custom-margin">Followers: <strong>{{ owner.followers }}</strong></p>
+            </div>
+            <div class="col-md-4">
+                <a href="https://github.com/dnmitev" target="_blank" class="btn btn-primary">Follow me on GitHub</a>
+            </div>
+        </div>
+
+        <div class="row" ng-cloak>
+            <div class="col-md-12">
+                <table class="table table-striped table-hover table-responsive">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Repo</th>
+                        <th>Created</th>
+                        <th>Last Update</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="repo in repos">
+                        <td>{{ $index + 1 }}</td>
+                        <td>
+                            <a href="{{ repo.html_url }}" target="_blank">
+                                <i class="fa fa-folder-open"></i> {{ repo.name }}
+                            </a>
+                        </td>
+                        <td>{{ repo.created_at | date:'medium' }}</td>
+                        <td>{{ repo.updated_at | date:'medium' }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

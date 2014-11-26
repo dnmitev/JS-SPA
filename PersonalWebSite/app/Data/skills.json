@@ -1,0 +1,61 @@
+{
+  "code": [
+    "C#",
+    "JavaScript"
+  ],
+  "technologies": [
+    "ASP.NET Web Api2",
+    "ASP.NET Web Forms",
+    "ASP.NET MVC5",
+    "Entity Framework 6",
+    "jQuery",
+    "Angularjs",
+    "Nodejs",
+    "Expressjs",
+    "Mongoose",
+    "Requirejs"
+  ],
+  "ui": [
+    "Kendo UI",
+    "Twitter Bootstrap"
+  ],
+  "ide": [
+    "Visual Studio",
+    "WebStorm"
+  ],
+  "thirdParty": [
+    "Ninject",
+    "AutoMapper",
+    "json.NET",
+    "Moq",
+    "JustMock"
+  ],
+  "db": [
+    "MS SQL Server",
+    "MongoDB"
+  ],
+  "basic": [
+    "OOP Principles",
+    "Data Structures",
+    "Algorithms",
+    "SOLID Principles",
+    "Clean Code",
+    "Design Patterns"
+  ],
+  "unitTesting": [
+    "Test-driven development",
+    "Mocking"
+  ],
+  "sourceControl": ["Git"],
+  "other": [
+    "AJAX",
+    "HTML5",
+    "CSS3",
+    "Semantic Web",
+    "SASS/LESS",
+    "Stylus",
+    "Handlebarsjs",
+    "Mustachejs",
+    "Jade"
+  ]
+}

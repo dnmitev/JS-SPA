@@ -1,0 +1,58 @@
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3><i class="fa fa-certificate"></i> Certificates</h3>
+                    <hr/>
+                    <div class="row" ng-repeat="certificate in certificates.certificates">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4>{{ certificate.name }}</h4>
+                                <p class="lead">{{ certificate.university }}</p>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="{{ certificate.url }}" target="_blank" class="btn btn-primary btn-sm">View</a>
+                            </div>
+                        </div>
+                        <p class="text-primary text-justify">{{ certificate.overview }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3><i class="fa fa-graduation-cap"></i> Diplomas</h3>
+                    <hr/>
+                    <div class="row" ng-repeat="diploma in certificates.diplomas">
+                        <div class="col-md-10">
+                            <h4>{{ diploma.name }}</h4>
+                            <p class="lead">{{ diploma.university }}</p>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="{{ diploma.url }}" target="_blank" class="btn btn-primary btn-sm">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3><i class="fa fa-file-text"></i> Other</h3>
+                    <hr/>
+                    <div class="row" ng-repeat="doc in certificates.other">
+                        <div class="col-md-10">
+                            <h4>{{ doc.name }}</h4>
+                            <p class="lead">{{ doc.university }}</p>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="{{ doc.url }}" target="_blank" class="btn btn-primary btn-sm">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

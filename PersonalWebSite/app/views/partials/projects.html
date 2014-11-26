@@ -1,0 +1,20 @@
+<div class="jumbotron">
+    <div class="row" ng-repeat="project in projects.projects">
+        <div class="col-md-6">
+            <div class="row">
+                    <a href="{{ project.url }}" target="_blank" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="View on GitHub"><i class="fa fa-github"></i></a>
+                    <h4 class="project-name">{{ project.name }}</h4>
+                    <span class="badge">{{ project.type }}</span>
+            </div>
+            <div class="row">
+                <dl class="dl-horizontal">
+                    <dt>Technologies used:</dt>
+                    <dd ng-repeat="tech in project.technologies">{{ tech }}</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <p class="text-primary text-justify">{{ project.overview }}</p>
+        </div>
+    </div>
+</div>

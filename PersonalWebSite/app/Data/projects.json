@@ -1,0 +1,86 @@
+{
+    "projects":[{
+        "name": "CodeHub",
+        "url": "https://github.com/dnmitev/CodeHub",
+        "type": "Individual",
+        "overview": "Simple web app for sharing source code. Each visitor can view the public source code fragments and their description. For registered users is possible to create a new described fragment of code and comment on existing fragments. User can make its code pastes private and can flag bugs. There is an administration part where the user in role 'admin' can manage the pastes and the registered users.",
+        "technologies": [
+            "ASP.NET MVC5",
+            "Entity Framework 6",
+            "MS SQL Server",
+            "jQuery",
+            "Kendo UI",
+            "Ninject",
+            "AutoMapper",
+            "CodeMirror",
+            "Bootstrap"
+        ]
+    },{
+        "name": "Bid4Stuff",
+        "url": "https://github.com/TanyaDimitrova/Bid4Stuff",
+        "type": "Teamwork",
+        "overview": "Simple web app like eBay. Each registered user can place an item to sell. Each registered user can bid on others items. There is an administration area for managing the bids and items.",
+        "technologies": [
+            "ASP.NET Web Forms",
+            "Entity Framework 6",
+            "MS SQL Server",
+            "jQuery",
+            "Bootstrap"
+        ]
+    },{
+        "name": "News System",
+        "url": "https://github.com/dnmitev/ASPNET-WebForms/tree/master/PracticalExam",
+        "type": "Practical Exam",
+        "overview": "Simple web app for sharing news. Registered users can read, vote and create an articles. Administration area can manage articles and articles' categories",
+        "technologies": [
+            "ASP.NET Web Forms",
+            "Entity Framework 6",
+            "MS SQL Server",
+            "jQuery",
+            "Bootstrap"
+        ]
+    },{
+        "name": "Ninjaes",
+        "url": "https://github.com/fast4y/Ninjaes",
+        "type": "Teamwork",
+        "overview": "Web based game like Heroes 3. Each user has a limited moves per day. User is moving on a canvas map and is finding randomly generated enemies. The refresh of the player coordinates is through sockets.",
+        "technologies": [
+            "Nodejs",
+            "Expressjs",
+            "Mongoose",
+            "MongoDB",
+            "Kendo UI",
+            "Socket.io",
+            "Angularjs",
+            "Bootstrap",
+            "Mocha",
+            "Chai"
+        ]
+    },{
+        "name": "Bulls & Cows",
+        "url": "https://github.com/dnmitev/Web-Services-And-Cloud/tree/master/PracticalExam",
+        "type": "Practical exam",
+        "overview": "Web-based game of numbers with RESTfull architecture. Each user can play a game with another user.",
+        "technologies": [
+            "ASP.NET Web Api 2",
+            "Entity Framework 6",
+            "MS SQL Server",
+            "Ninject",
+            "Moq"
+        ]
+    }, {
+        "name": "Kinoman3000",
+        "url": "https://github.com/dnmitev/Web-Services-And-Cloud/tree/master/PracticalExam",
+        "type": "Teamwork",
+        "overview": "Simple WPF client for creating movie tickets. The movies are stored into a Mongo database and are loaded in the WPF client. The user makes a ticket and prints it as PDF. For each movie projection can be done an excel report.",
+        "technologies": [
+            "Entity Framework 6",
+            "MS SQL Server",
+            "MySQL",
+            "SQLite",
+            "MongoDB",
+            "ADO.NET",
+            "WPF"
+        ]
+    }]
+}

@@ -1,0 +1,68 @@
+{
+  "universities": [{
+    "caption": "Telerik Academy",
+    "img": "/img/super_ninja.png",
+    "url": "http://academy.telerik.com/",
+    "started": "October, 2013",
+    "finished": "November, 2014",
+    "speciality": "Web Developer",
+    "courses": [
+      "C# Fundamentals",
+      "Object oriented programming",
+      "Data Structures And Algorithms",
+      "JavaScript Fundamentals",
+      "JavaScript UI & DOM",
+      "JavaScript OOP",
+      "JavaScript Applications",
+      "JavaScript SPA Applications",
+      "End to end JavaScript",
+      "Databases",
+      "Web services",
+      "ASP.NET Web Forms",
+      "ASP.NET MVC5"
+    ]
+  },{
+    "caption": "Institute for Postgraduate Studies Division at University for National and World Economy",
+    "img": "/img/unwe.png",
+    "url": "http://www.ips.bg/",
+    "started": "October, 2011",
+    "finished": "December, 2013",
+    "speciality": "Professional qualification on Project Management",
+    "courses": [
+      "Time & Resource Management",
+      "Quality Management",
+      "Monitoring and Control Management",
+      "Risk Management",
+      "Tools for Project Management"
+    ]
+  }, {
+    "caption": "University of Architecture, Civil Engineering and Geodesy",
+    "img": "/img/UACEG sofia.png",
+    "url": "http://uacg.bg/",
+    "started": "October, 2008",
+    "finished": "July, 2013",
+    "speciality": "Master degree in Civil Engineering",
+    "courses": [
+      "FEM Analysis",
+      "Static and dynamic analysis of constructions",
+      "Earthquake resistance of constructions",
+      "Strength of materials",
+      "Reinforced concrete",
+      "Steel structures",
+      "Buckling resistance"
+    ]
+  },{
+    "caption": "High School of Mathematics Acad. Kiril Popov, Plovdiv",
+    "img": "/img/omg.png",
+    "url": "http://omg-bg.com/",
+    "started": "September, 2003",
+    "finished": "July, 2008",
+    "speciality": "Mathematics with English & Informatics",
+    "courses": [
+      "Math",
+      "Informatics",
+      "Physics",
+      "Chemistry"
+    ]
+  }]
+}

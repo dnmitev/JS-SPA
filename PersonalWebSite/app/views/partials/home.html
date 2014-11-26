@@ -1,0 +1,122 @@
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="/img/dimitarmitev.png" class="img img-circle" alt="Dimitar Mitev - Personal Photo"/>
+        </div>
+        <div class="col-md-8">
+            <div class="row">
+                <h1 class="lobster-font-family">Dimitar N. Mitev</h1>
+
+                <h3 class="lobster-font-family">Web Developer</h3>
+
+                <p class="btn-group">
+                    <button id="contacts-btn" class="btn btn-default">Get in touch</button>
+                    <button id="about-btn" class="btn btn-info">More about me</button>
+                    <button id="skills-btn" class="btn btn-primary">Skills</button>
+                </p>
+            </div>
+
+            <div id="personal-contacts" class="row">
+                <ul>
+                    <li>
+                        <a href="mailto:{{ contacts.email }}"><i class="fa fa-envelope"></i> {{ contacts.email }}</a>
+                    </li>
+                    <li>
+                        <a href="{{ contacts.linkedin }}" target="_blank"><i class="fa fa-linkedin-square"></i> Find me
+                            on LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="{{ contacts.github }}" target="_blank"><i class="fa fa-github"></i> Check out my GitHub</a>
+                    </li>
+                    <li>
+                        <a href="other/cv-mitev.pdf" class="btn btn-primary btn-lg" download>Download my CV</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="more-about-me" class=" row text-justify">
+                {{ about.me }}
+            </div>
+
+            <div id="my-skills" class="row">
+                <div class="col-md-6">
+                    <dl class="dl-horizontal">
+                        <dt>
+                            Basic knowledge:
+                        </dt>
+                        <dd ng-repeat="skill in skills.basic | orderBy">
+                            <strong class="text-primary">{{ skill }}</strong>
+                        </dd>
+                        <hr/>
+                        <dt>
+                            Programming languages:
+                        </dt>
+                        <dd ng-repeat="skill in skills.code">
+                            <strong class="text-primary">{{ skill }}</strong>
+                        </dd>
+                        <hr/>
+                        <dt>
+                            IDEs:
+                        </dt>
+                        <dd ng-repeat="skill in skills.ide | orderBy">
+                            <strong class="text-primary">{{ skill }}</strong>
+                        </dd>
+                        <hr/>
+                        <dt>
+                            Databases:
+                        </dt>
+                        <dd ng-repeat="skill in skills.db  | orderBy">
+                            <strong class="text-primary">{{ skill }}</strong>
+                        </dd>
+                        <hr/>
+                        <dt>
+                            Third-party frameworks:
+                        </dt>
+                        <dd ng-repeat="skill in skills.thirdParty  | orderBy">
+                            <strong class="text-primary">{{ skill }} </strong>
+                        </dd>
+                        <hr/>
+                        <dt>
+                            Unit Testing:
+                        </dt>
+                        <dd ng-repeat="skill in skills.unitTesting  | orderBy">
+                            <strong class="text-primary">{{ skill }} </strong>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-md-6">
+                    <dl class="dl-horizontal">
+                        <dt>
+                            Technologies:
+                        </dt>
+                        <dd ng-repeat="skill in skills.technologies | orderBy">
+                            <strong class="text-primary">{{ skill }}</strong>
+                        </dd>
+                        <hr/>
+                        <dt>
+                            UI Frameworks:
+                        </dt>
+                        <dd ng-repeat="skill in skills.ui | orderBy">
+                            <strong class="text-primary">{{ skill }}</strong>
+                        </dd>
+                        <hr/>
+                        <dt>
+                            Other skills:
+                        </dt>
+                        <dd ng-repeat="skill in skills.other | orderBy">
+                            <strong class="text-primary">{{ skill }}</strong>
+                        </dd>
+                        <hr/>
+                        <dt>
+                            Source control:
+                        </dt>
+                        <dd ng-repeat="skill in skills.sourceControl | orderBy">
+                            <strong class="text-primary">{{ skill }}</strong>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

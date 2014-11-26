@@ -1,0 +1,36 @@
+{
+    "experience":[{
+        "company": "KZU Project Ltd.",
+        "url":"http://www.kzu-group.com/",
+        "position": "Civil Engineer",
+        "started": "July, 2013",
+        "finished": "October, 2014",
+        "duties": [
+            "Design and development of storage tanks for industrial purposes",
+            "Direct contact with international clients",
+            "Work with a large team on complex projects"
+        ]
+    },{
+        "company": "Yoda Ltd.",
+        "url": "http://www.yoda-bg.com/",
+        "position": "Civil Engineer",
+        "started": "February, 2013",
+        "finished": "July, 2013",
+        "duties": [
+            "Design and development of buildings and structures",
+            "Seismic design of buildings",
+            "Retrofitting and assessment of constructions",
+            "Teamwork on several projects",
+            "Solve complex problems"
+        ]
+    },{
+        "company": "Center for Research and Development to UACEG",
+        "url":"http://www.uacg.bg/?p=114&l=1",
+        "position": "Civil Engineer",
+        "started": "July, 2012",
+        "finished": "September, 2012",
+        "duties": [
+            "Retrofitting and assessment of constructions damaged by earthquake"
+        ]
+    }]
+}

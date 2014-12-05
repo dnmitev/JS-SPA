@@ -1,46 +1,54 @@
 {
-    "certificates":[{
-        "name": "C# Developer",
-        "university": "Telerik Academy",
-        "url": "http://telerikacademy.com/Certificates/View/704/912396ab",
-        "overview": "Exceptional performance in the whole C# Developer's track"
-    },{
-        "name": "JavaScript Developer",
-        "university": "Telerik Academy",
-        "url": "http://telerikacademy.com/Certificates/View/700/b4ebcd4c",
-        "overview": "Exceptional performance in the whole JavaScript Developer's track"
-    },{
-        "name": "Web Developer",
-        "university": "Telerik Academy",
-        "url": "http://telerikacademy.com/Certificates/View/904/05a2dbcb",
-        "overview": "Exceptional performance in the whole Web Developer's track"
-    },{
-        "name": "Business Skills for Developers",
-        "university": "Telerik Academy",
-        "url": "http://telerikacademy.com/Certificates/View/653/aece6bc6",
-        "overview": "First team place on a teamwork course assignment"
-    },{
-        "name": "Professional Qualification on Project Management",
-        "university": "IPS to UNWE",
-        "url": "https://drive.google.com/file/d/0B8PLPrH6hmqGazF4LUlfRVc2Nms/view?usp=sharing",
-        "overview": "Successfully finished training at the Institute for Postgraduate Studies to the University of National and Wrold Economy"
-    }],
-    "diplomas": [{
-        "name": "Master degree in Civil Engineering",
-        "university": "University of Architecture, Civil Engineering and Geodesy",
-        "url": "https://drive.google.com/file/d/0B8PLPrH6hmqGbDZYV1BHN3BIXzA/view?usp=sharing"
-    }, {
-        "name": "Additional Qualification on Project Management",
-        "university": "IPS to UNWE",
-        "url": "https://drive.google.com/file/d/0B8PLPrH6hmqGOEh6b3oyRy1UVUk/view?usp=sharing"
-    },{
-        "name": "High School Diploma",
-        "university": "High School of Mathematics Acad. Kiril Popov",
-        "url": "https://drive.google.com/file/d/0B8PLPrH6hmqGMTd3cmxMVjNiYTA/view?usp=sharing"
-    }],
-    "other": [{
-        "name": "SAT Score Report",
-        "university": "College Board",
-        "url": "https://drive.google.com/file/d/0B8PLPrH6hmqGanpuZVJyZ3VqVVU/view?usp=sharing"
-    }]
+	"certificates" : [{
+			"name" : "C# Developer",
+			"university" : "Telerik Academy",
+			"url" : "http://telerikacademy.com/Certificates/View/704/912396ab",
+			"overview" : "Exceptional performance in the whole C# Developer's track"
+		}, {
+			"name" : "JavaScript Developer",
+			"university" : "Telerik Academy",
+			"url" : "http://telerikacademy.com/Certificates/View/700/b4ebcd4c",
+			"overview" : "Exceptional performance in the whole JavaScript Developer's track"
+		}, {
+			"name" : "Web Developer",
+			"university" : "Telerik Academy",
+			"url" : "http://telerikacademy.com/Certificates/View/904/05a2dbcb",
+			"overview" : "Exceptional performance in the whole Web Developer's track"
+		},{
+			"name" : "Telerik Academy Graduate",
+			"university" : "Telerik Academy",
+			"url" : "https://telerikacademy.com/Certificates/View/1065/759cd7b3",
+			"overview" : "Successfully graduated Telerik Academy, Season 2013/2014"
+		}, {
+			"name" : "Business Skills for Developers",
+			"university" : "Telerik Academy",
+			"url" : "http://telerikacademy.com/Certificates/View/653/aece6bc6",
+			"overview" : "First team place on a teamwork course assignment"
+		}, {
+			"name" : "Professional Qualification on Project Management",
+			"university" : "IPS to UNWE",
+			"url" : "https://drive.google.com/file/d/0B8PLPrH6hmqGTkxjYVB3cmY0cms/view?usp=sharing",
+			"overview" : "Successfully finished training at the Institute for Postgraduate Studies to the University of National and Wrold Economy"
+		}
+	],
+	"diplomas" : [{
+			"name" : "Master degree in Civil Engineering",
+			"university" : "University of Architecture, Civil Engineering and Geodesy",
+			"url" : "https://drive.google.com/file/d/0B8PLPrH6hmqGdWtzT1A1TGJBZkE/view?usp=sharing"
+		}, {
+			"name" : "Additional Qualification on Project Management",
+			"university" : "IPS to UNWE",
+			"url" : "https://drive.google.com/file/d/0B8PLPrH6hmqGanVxZU45MVE0eEU/view?usp=sharing"
+		}, {
+			"name" : "High School Diploma",
+			"university" : "High School of Mathematics Acad. Kiril Popov",
+			"url" : "https://drive.google.com/file/d/0B8PLPrH6hmqGbkRnSmRhdkltakE/view?usp=sharing"
+		}
+	],
+	"other" : [{
+			"name" : "SAT Score Report",
+			"university" : "College Board",
+			"url" : "https://drive.google.com/file/d/0B8PLPrH6hmqGM0kxRzNQa3FOeWs/view?usp=sharing"
+		}
+	]
 }

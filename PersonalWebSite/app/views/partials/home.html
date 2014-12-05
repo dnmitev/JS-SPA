@@ -13,6 +13,7 @@
                     <button id="contacts-btn" class="btn btn-default">Get in touch</button>
                     <button id="about-btn" class="btn btn-info">More about me</button>
                     <button id="skills-btn" class="btn btn-primary">Skills</button>
+                    <button id="testimonials-btn" class="btn btn-warning">Testimonials</button>
                 </p>
             </div>
 
@@ -116,7 +117,59 @@
                     </dl>
                 </div>
             </div>
+
+            <div id="testimonials" class="row text-justify" ng-cloak>
+                <div id="loading-bar" class="row container">
+                    <img src="/img/loading.gif" alt="loading image" width="50px"/>
+                    <span>Loading...</span>
+                </div>
+                <ul id="recos" class="list-unstyled">
+                    <!--Content from the LinkedIn REST API-->
+                </ul>
+            </div>
         </div>
     </div>
 </div>
+
+<script type="text/javascript" src="http://platform.linkedin.com/in.js">
+    api_key: 75ppm19e9pk5a1
+    authorize: true
+</script>
+<script type="IN/Login" data-onAuth="authSuccess"></script>
+<script>
+    var recos = $("#recos");
+    function authSuccess() {
+        IN.API.Raw("/people/~/recommendations-received").result(function (result) {
+            for (var key in result.values) {
+                var reco = result.values[key];
+
+                sessionStorage[reco.recommender.firstName + ' ' + reco.recommender.lastName] = reco.recommendationText;
+            }
+        });
+    }
+
+    if (sessionStorage.length === 0) {
+        setTimeout(function () {
+            appendRecos();
+        },10000);
+    } else {
+        appendRecos();
+    }
+
+
+    function appendRecos() {
+        for (var i = 0; i < sessionStorage.length; i += 1) {
+            var recoText = sessionStorage.getItem(sessionStorage.key(i)),
+                    recoAuthor = sessionStorage.key(i),
+                    html =
+                            '<blockquote class="pull-right">' +
+                            '<p class="text-justify recommendation-quote">' + recoText + '</p>' +
+                            '<strong class="reco-author">' + recoAuthor + '</strong>' +
+                            '</blockquote>';
+
+            $('#loading-bar').hide();
+            recos.append('<li />').append(html);
+        }
+    }
+</script>
 

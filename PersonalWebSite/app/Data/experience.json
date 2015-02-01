@@ -1,5 +1,15 @@
 {
     "experience":[{
+        "company": "BulPros",
+        "url":"http://www.bulpros.com/bg/",
+        "position": "Software Engineer",
+        "started": "January, 2013",
+        "finished": "-",
+        "duties": [
+            "Development of .NET web applications",
+            "House .NET team member"
+        ]
+    },{
         "company": "KZU Project Ltd.",
         "url":"http://www.kzu-group.com/",
         "position": "Civil Engineer",
